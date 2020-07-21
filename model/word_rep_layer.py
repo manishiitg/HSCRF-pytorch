@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-import model.utils
+import model.utils as utils
 import model.highway_layer as highway_layer
 
 

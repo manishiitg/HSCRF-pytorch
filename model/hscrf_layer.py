@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch.autograd import Variable
 import numpy as np
 
-import model.utils
+import model.utils as utils
 
 
 class HSCRF(nn.Module):

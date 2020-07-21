@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-import model.utils
+import model.utils as utils
 from torch.autograd import Variable
 
 
