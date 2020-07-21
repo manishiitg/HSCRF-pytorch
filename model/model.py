@@ -1,8 +1,8 @@
 from __future__ import print_function, division
 import torch.nn as nn
-from word_rep_layer import WORD_REP
-from crf_layer import CRF
-from hscrf_layer import HSCRF
+from model.word_rep_layer import WORD_REP
+from model.crf_layer import CRF
+from model.hscrf_layer import HSCRF
 
 
 class ner_model(nn.Module):

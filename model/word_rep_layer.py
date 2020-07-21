@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-import utils
-import highway_layer
+import model.utils
+import model.highway_layer
 
 
 class WORD_REP(nn.Module):
