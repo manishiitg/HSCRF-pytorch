@@ -81,7 +81,7 @@ class CRF(nn.Module):
         tg_energy = tg_energy.masked_select(mask).sum()
 
         seq_iter = enumerate(scores)
-        _, inivalues = seq_iter.next()
+        _, inivalues = next(seq_iter)
         partition = inivalues[:, self.start_tag, :].clone()
         for idx, cur_values in seq_iter:
             cur_values = cur_values + partition.contiguous().view(bat_size, self.tagset_size, 1).\
